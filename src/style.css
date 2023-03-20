@@ -1,93 +1,166 @@
-body {
-  font-family: arial, sans-serif;
+h5,
+ul,
+p,
+button {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: #99267c;
 }
-
 h1 {
-  color: #878787;
-  font-size: 24px;
+  font-size: 100px;
+  font-family: "Lobster", cursive;
+  font-weight: 900;
+  margin: 35px auto;
+  line-height: 0px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  color: #99267c;
+  line-height: 1.5;
   font-weight: 100;
-  line-height: 28px;
-  margin-bottom: 0;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  color: rgb(135, 135, 135);
-  font-size: 16px;
+h4 {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  color: #99267c;
+  line-height: 1.5;
   font-weight: 100;
-  line-height: 19px;
 }
-
-li:first-letter {
-  text-transform: capitalize;
-}
-
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.weather-app {
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
-
-.overview {
-  margin-bottom: 20px;
-}
-
-.weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
-}
-
-.weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 1;
-  font-weight: 400;
-}
-
-.weather-temperature .units {
-  position: relative;
-  font-size: 16px;
-  top: -34px;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
+a {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "Lobster", cursive;
+  color: #99267c;
   text-decoration: none;
 }
-
-.weather-forecast {
-  margin-top: 20px;
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+footer {
   text-align: center;
-  color: #000;
+  margin: -10px auto -40px;
+}
+.float-left {
+  color: #99267c;
+}
+.units {
+  font-size: 30px;
+  color: #99267c;
+  line-height: 2;
+  position: relative;
+  top: -85px;
+  right: -40%;
+}
+#celsius-link,
+#fahrenheit-link {
+  font-size: 20px;
+}
+.container {
+  display: block;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 30px auto 50px auto;
+  border: 2px solid #5e5e5e;
+  color: #521537;
+  line-height: 15px;
+  padding: 40px 30px 60px;
+  border-color: #1b0511;
+  box-shadow: 5px auto rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to top, #b0a0b9 0%, #f58ad1 100%);
 }
 
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+.btn {
+  display: inline;
+  margin: auto 40px;
+  border: 1px solid #16a752;
+  background: #16a752;
+  color: #fff;
+  font-size: 20px;
+  line-height: 5px;
+  padding: 18px 20px;
+  border-radius: 15px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
 }
-
-.weather-forecast-temperature-min {
-  opacity: 0.5;
+.btn:hover {
+  background: #fff;
+  color: #0c0c0c;
+  border: 1px solid #16a752;
 }
+.btn-secondary {
+  display: inline;
+  position: relative;
+  top: -100%;
+  right: -260%;
+  margin: auto 40px;
+  border: 1px solid #4d85ec;
+  background: #4d85ec;
+  color: #fff;
+  font-size: 20px;
 
-.weather-forecast-temperatures {
-  font-size: 13px;
+  line-height: 5px;
+  padding: 18px 20px;
+  border-radius: 15px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background: #fff;
+  color: #0c0c0c;
+  border: 1px solid #4d85ec;
+}
+.temp {
+  position: relative;
+  top: -70%;
+  right: -100%;
+}
+.image {
+  position: relative;
+  top: -120%;
+  right: 40%;
+}
+.temperature {
+  font-size: 70px;
+  position: relative;
+  right: -20%;
+  top: -10%;
+  font-weight: 600;
+  font-family: "Lobster", cursive;
+  color: #99267c;
+  margin-bottom: -3%;
+}
+.col {
+  padding-top: 100px;
+}
+.col-md-2 {
+  border-radius: 15px;
+  max-width: 600px;
+  display: block;
+  margin: 5px auto;
+  padding: 16px 24px;
+}
+.link {
+  font-size: 20px;
+}
+.active {
+  color: #521537;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
+#description {
+  text-transform: capitalize;
 }
