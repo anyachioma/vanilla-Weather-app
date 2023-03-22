@@ -82,12 +82,6 @@ function searchCurrentCity(city) {
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
-  let city = document.querySelector("#search-form").value;
-  searchCurrentCity(city);
-}
-
 function currentCity(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
@@ -102,9 +96,6 @@ function getPosition(event) {
 }
 
 let currentLocation = document.querySelector("#current-city");
-
-let submitCurrent = document.querySelector("#search-form");
-submitCurrent.addEventListener("submit", handleSubmit);
 
 currentLocation.addEventListener("click", getPosition);
 
